@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Scrips-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Juego de la Oca</title>
+  </head>
+
+  <body>
+    <!--Menu principal-->
+    <div id="menuPrincipal">
+      <label for="jugadores" id="labelNumeroJugadores"
+        >Elige el número de jugadores</label
+      >
+      <select name="jugadores" id="cantidadJugadores">
+        <option value="0">-----------</option>
+        <option value="2">2 jugadores</option>
+        <option value="3">3 jugadores</option>
+        <option value="4">4 jugadores</option>
+      </select>
+      <br />
+      <div id="pantallaJugador">
+        <!--En este div mostraremos el selector de perfil de cada jugador-->
+      </div>
+      <button id="start">Empezar</button>
+      <audio id="playCancionInicial" src="sound/funny-happy-comedy-halloween-intro-for-kids-children-116552.mp3" loop></audio>
+    </div>
+
+    <!--InteracciÓn del jugador-->
+    <div id="seccionJuego">
+      <div id="cajaDeJuego">
+        <div id="cajaPulsadores"></div>
+      </div>
+      <audio  id="playCancionGanador" src="sound/cheering-and-clapping-crowd-1-5995.mp3"></audio>
+      <!--tablero-->
+      <section id="tablero">
+        <div id="cajasTablero">
+          <div class="box" id="boxSalida">
+            salida
+            
+            <div id="boxFichas">
+            <!--mostraremos las fichas de cada jugador-->
+            </div>
+          </div>
+          <div id="tableroCajas">
+           <div class="box">13</div>
+           <div class="box">12</div>
+           <div class="box">11</div>
+           <div class="box">10</div>
+           <div class="box">9</div>
+           <div class="box">14</div>
+           <div class="box">23</div>
+           <div class="box">22</div>
+           <div class="box">21</div>
+           <div class="box">8</div>
+           <div class="box">15</div>
+           <div class="box">24</div>
+           <div class="box"></div>
+           <div class="box">20</div>
+           <div class="box">7</div>
+           <div class="box">16</div>
+           <div class="box">17</div>
+           <div class="box">18</div>
+           <div class="box">19</div>
+           <div class="box">6</div>
+           <div class="box">1</div>
+           <div class="box">2</div>
+           <div class="box">3</div>
+           <div class="box">4</div>
+           <div class="box">5</div>
+          </div>
+          
+        </div>
+        
+      </section>
+    </div>
+  </body>
+</html>
